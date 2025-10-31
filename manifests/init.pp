@@ -61,7 +61,7 @@ class paw_ansible_role_postgresql (
   Optional[Boolean] $par_logoutput = undef,
   Optional[Boolean] $par_exclusive = undef
 ) {
-  # Execute the Ansible role using PAR (Puppet Ansible Runner)
+# Execute the Ansible role using PAR (Puppet Ansible Runner)
   $vardir = pick($facts['puppet_vardir'], $settings::vardir, '/opt/puppetlabs/puppet/cache')
   $playbook_path = "${vardir}/lib/puppet_x/ansible_modules/ansible_role_postgresql/playbook.yml"
 
